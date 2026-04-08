@@ -145,13 +145,14 @@ header.banier::before {
 .hero-desc { color: var(--muted); font-size: 15px; margin-bottom: 28px; line-height: 1.7; }
 .hero-btns { display: flex; gap: 12px; flex-wrap: wrap; }
 
-.hero-photo-wrap {
-  display: flex; justify-content: center; align-items: center;
-}
 .hero-photo-wrap img {
-  width: 280px; height: 280px;
+  width: 280px; 
+  height: 280px;
+  /* 'cover' remplit tout le cadre, mais 'object-position' 
+     permet de remonter l'image pour voir ton visage */
   object-fit: cover;
-  border-radius: 25% 10%;
+  object-position: top; 
+  border-radius: 20px; /* Un arrondi plus moderne et propre */
   border: 3px solid var(--border);
   transition: border-color .3s;
 }
