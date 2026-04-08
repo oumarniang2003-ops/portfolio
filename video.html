@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oumar Niang — Vidéos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style/style.css">
+  <link rel="shortcut icon" href="./image/portifio.jpeg" type="image/jpg">
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <a href="./index.html" class="nav-logo">Oumar<span>.</span></a>
+      <div class="nav-links">
+        <a href="./index.html">Accueil</a>
+        <a href="./about.html">À propos</a>
+        <a href="./projets.html">Projets</a>
+        <a href="./video.html" class="active">Vidéo</a>
+        <a href="./contact.html">Contact</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu"
+        onclick="this.closest('nav').querySelector('.nav-links').classList.toggle('open')">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+
+    <div class="wrap" style="padding-top:64px; padding-bottom:40px;">
+      <span class="tag">Contenu vidéo</span>
+      <h1 style="font-family:var(--font-h);font-size:clamp(2rem,4.5vw,3rem);font-weight:800;letter-spacing:-1px;margin-bottom:12px">
+        Mes vidéos
+      </h1>
+      <p style="color:var(--muted);font-size:15px;max-width:540px">
+        Démonstrations de projets et ressources qui m'ont aidé dans mon apprentissage.
+      </p>
+    </div>
+
+    <div class="wrap" style="padding-bottom:64px;">
+      <div class="video-grid">
+
+        <!-- Remplacez les src par vos vraies URLs YouTube embed -->
+        <div class="video-card">
+          <iframe
+            src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+            title="Démo Teranga Délices"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+          <div class="video-card-body">
+            <h3>Démo — Teranga Délices</h3>
+            <p>Présentation du site restaurant réalisé en HTML, CSS, PHP</p>
+          </div>
+        </div>
+
+        <div class="video-card">
+          <iframe
+            src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+            title="Démo Blog Gamin"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+          <div class="video-card-body">
+            <h3>Démo — Blog Gamin</h3>
+            <p>Présentation du blog Minecraft et de son interface</p>
+          </div>
+        </div>
+
+        <div class="video-card">
+          <iframe
+            src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+            title="Démo E-commerce"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+          <div class="video-card-body">
+            <h3>Démo — E-commerce Automobile</h3>
+            <p>Présentation du site de vente de pièces auto</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Instructions pour remplacer les vidéos -->
+      <div style="margin-top:40px; padding:20px 24px; background:var(--bg2); border:1px solid var(--border); border-radius:var(--r); font-size:13px; color:var(--muted); line-height:1.8;">
+        <strong style="color:var(--accent2);">Comment ajouter vos vraies vidéos :</strong><br>
+        1. Allez sur YouTube → ouvrez votre vidéo → cliquez "Partager" → "Intégrer"<br>
+        2. Copiez uniquement l'URL dans <code style="color:var(--accent)">src="https://www.youtube.com/embed/VOTRE_ID"</code><br>
+        3. Remplacez les 3 <code style="color:var(--accent)">src</code> dans ce fichier video.html<br>
+        4. Supprimez ce bloc d'instructions
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+    <p>© 2025 <strong>Oumar Niang.</strong> Tous droits réservés.</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oumar Niang — Contact</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style/style.css">
+  <link rel="shortcut icon" href="./image/portifio.jpeg" type="image/jpg">
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <a href="./index.html" class="nav-logo">Oumar<span>.</span></a>
+      <div class="nav-links">
+        <a href="./index.html">Accueil</a>
+        <a href="./about.html">À propos</a>
+        <a href="./projets.html">Projets</a>
+        <a href="./video.html">Vidéo</a>
+        <a href="./contact.html" class="active">Contact</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu"
+        onclick="this.closest('nav').querySelector('.nav-links').classList.toggle('open')">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+
+    <div class="wrap" style="padding-top:64px; padding-bottom:40px;">
+      <span class="tag">Travaillons ensemble</span>
+      <h1 style="font-family:var(--font-h);font-size:clamp(2rem,4.5vw,3rem);font-weight:800;letter-spacing:-1px;margin-bottom:12px">
+        Me contacter
+      </h1>
+      <p style="color:var(--muted);font-size:15px;">Un projet, une question ? Je réponds sous 24h.</p>
+    </div>
+
+    <div class="contact-layout">
+
+      <!-- ── FORMULAIRE ── -->
+      <div>
+        <div class="contact-form">
+          <h2>Envoyer un message</h2>
+          <!--
+            Pour que le formulaire envoie vraiment des emails :
+            1. Créez un compte sur formspree.io
+            2. Remplacez VOTRE_ID ci-dessous par votre vrai ID
+          -->
+          <form action="https://formspree.io/f/VOTRE_ID" method="POST" style="display:flex;flex-direction:column;gap:16px;">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="prenom">Prénom</label>
+                <input type="text" id="prenom" name="prenom" placeholder="Votre prénom" required>
+              </div>
+              <div class="form-group">
+                <label for="nom">Nom</label>
+                <input type="text" id="nom" name="nom" placeholder="Votre nom" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email">Adresse e-mail</label>
+              <input type="email" id="email" name="email" placeholder="votre@email.com" required>
+            </div>
+            <div class="form-group">
+              <label for="sujet">Sujet</label>
+              <select id="sujet" name="sujet">
+                <option value="">Choisir un sujet…</option>
+                <option value="projet">Demande de projet</option>
+                <option value="collaboration">Collaboration</option>
+                <option value="stage">Opportunité de stage</option>
+                <option value="autre">Autre</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <!-- input type="textarea" n'existe pas — corrigé en vrai textarea -->
+              <textarea id="message" name="message" placeholder="Décrivez votre demande…" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">
+              Envoyer le message
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            </button>
+            <p style="font-size:12px;color:var(--muted);text-align:center;">
+              Déjà en contact ? <a href="mailto:oumarniang@gmail.com" style="color:var(--accent);">Écrire directement</a>
+            </p>
+          </form>
+        </div>
+      </div>
+
+      <!-- ── COORDONNÉES ── -->
+      <div class="contact-info">
+        <h2>Mes coordonnées</h2>
+
+        <!-- Téléphone -->
+        <div class="contact-item">
+          <div class="ci-icon">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13.1 19.79 19.79 0 0 1 1.54 4.49 2 2 0 0 1 3.51 2.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.77a16 16 0 0 0 6.32 6.32l1.58-1.85a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+            </svg>
+          </div>
+          <div>
+            <div class="ci-label">Téléphone</div>
+            <a href="tel:+221785430617" class="ci-value">+221 78 543 06 17</a>
+          </div>
+        </div>
+
+        <!-- Email -->
+        <div class="contact-item">
+          <div class="ci-icon">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+              <polyline points="22,6 12,13 2,6"/>
+            </svg>
+          </div>
+          <div>
+            <div class="ci-label">E-mail</div>
+            <a href="mailto:oumarniang@gmail.com" class="ci-value">oumarniang@gmail.com</a>
+          </div>
+        </div>
+
+        <!-- Localisation -->
+        <div class="contact-item">
+          <div class="ci-icon">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+              <circle cx="12" cy="10" r="3"/>
+            </svg>
+          </div>
+          <div>
+            <div class="ci-label">Localisation</div>
+            <span class="ci-value">Dakar, Sénégal</span>
+          </div>
+        </div>
+
+        <div style="border-top:1px solid var(--border);margin:24px 0;"></div>
+
+        <p style="font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;margin-bottom:14px;">
+          Réseaux sociaux
+        </p>
+
+        <div class="social-links">
+
+          <!-- LinkedIn -->
+          <a href="https://www.linkedin.com/in/oumar-niang-01b003328/" target="_blank" class="social-btn">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+              <rect x="2" y="9" width="4" height="12"/>
+              <circle cx="4" cy="4" r="2"/>
+            </svg>
+            LinkedIn — Oumar Niang
+          </a>
+
+          <!-- Facebook -->
+          <a href="https://www.facebook.com/" target="_blank" class="social-btn">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+            </svg>
+            Facebook
+          </a>
+
+          <!-- WhatsApp -->
+          <a href="https://wa.me/221785430617" target="_blank" class="social-btn">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/>
+            </svg>
+            WhatsApp — +221 78 543 06 17
+          </a>
+
+          <!-- X (Twitter) -->
+          <a href="https://x.com/" target="_blank" class="social-btn">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.746l7.73-8.835L1.254 2.25H8.08l4.253 5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+            </svg>
+            X (Twitter)
+          </a>
+
+          <!-- GitHub — remplacez par votre vrai lien -->
+          <a href="https://github.com/" target="_blank" class="social-btn">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+            </svg>
+            GitHub (à ajouter)
+          </a>
+
+        </div>
+
+        <div style="border-top:1px solid var(--border);margin:24px 0;"></div>
+
+        <a href="cv/cv.pdf" class="btn btn-outline btn-full" download>
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+            <polyline points="7 10 12 15 17 10"/>
+            <line x1="12" y1="15" x2="12" y2="3"/>
+          </svg>
+          Télécharger mon CV (PDF)
+        </a>
+
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+    <p>© 2025 <strong>Oumar Niang.</strong> Tous droits réservés.</p>
+  </footer>
+
+</body>
+</html>

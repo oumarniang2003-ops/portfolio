@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oumar Niang — À propos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style/style.css">
+  <link rel="shortcut icon" href="./image/portifio.jpeg" type="image/jpg">
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <a href="./index.html" class="nav-logo">Oumar<span>.</span></a>
+      <div class="nav-links">
+        <a href="./index.html">Accueil</a>
+        <a href="./about.html" class="active">À propos</a>
+        <a href="./projets.html">Projets</a>
+        <a href="./video.html">Vidéo</a>
+        <a href="./contact.html">Contact</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu"
+        onclick="this.closest('nav').querySelector('.nav-links').classList.toggle('open')">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <div class="hero-about">
+      <div>
+        <span class="tag">À propos de moi</span>
+        <h1>Étudiant passionné par la <em>tech & la bio</em></h1>
+        <p class="hero-desc">
+          Bac S2 obtenu en 2024, je suis en 1ère année à l'ESTM en génie logiciel
+          et administration système/réseau. Ce qui me distingue : mon approche
+          interdisciplinaire — combiner informatique et biologie pour résoudre
+          des problèmes concrets.
+        </p>
+        <a href="cv/cv.pdf" class="btn btn-primary" download>
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Télécharger mon CV
+        </a>
+      </div>
+      <div class="stats-grid">
+        <div class="stat-card">
+          <span class="stat-num">3</span>
+          <span class="stat-label">Projets réalisés</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-num">4</span>
+          <span class="stat-label">Langages appris</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-num">1</span>
+          <span class="stat-label">An de formation</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-num">∞</span>
+          <span class="stat-label">Curiosité</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- PARCOURS -->
+    <div class="wrap section-pad">
+      <span class="tag-sm">Éducation</span>
+      <h2 style="font-family:var(--font-h);font-size:clamp(1.6rem,3vw,2.2rem);font-weight:800;letter-spacing:-.5px;margin-bottom:40px">Mon parcours scolaire</h2>
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="t-date">2010 — 2017</div>
+          <div class="t-spine"><div class="t-dot"></div></div>
+          <div class="t-body">
+            <h3>École primaire de Polel Diaoubé</h3>
+            <p>Cycle primaire complet</p>
+            <span class="badge">Certificat de fin d'études primaires</span>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="t-date">2017 — 2021</div>
+          <div class="t-spine"><div class="t-dot"></div></div>
+          <div class="t-body">
+            <h3>Collège de Orkadiere</h3>
+            <p>Formation générale — cycle secondaire</p>
+            <span class="badge badge-purple">BFEM</span>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="t-date">2021 — 2024</div>
+          <div class="t-spine"><div class="t-dot"></div></div>
+          <div class="t-body">
+            <h3>Lycée de Orkadiere</h3>
+            <p>Série scientifique</p>
+            <span class="badge badge-purple">Baccalauréat série S2</span>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="t-date">2024 — présent</div>
+          <div class="t-spine"><div class="t-dot active"></div></div>
+          <div class="t-body">
+            <h3>ESTM — Génie logiciel & Admin système/réseau</h3>
+            <p>HTML, CSS, PHP, MySQL, JavaScript, Python, Java</p>
+            <span class="badge badge-green">En cours</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- COMPÉTENCES -->
+    <div class="wrap section-pad">
+      <span class="tag-sm">Stack technique</span>
+      <h2 style="font-family:var(--font-h);font-size:clamp(1.6rem,3vw,2.2rem);font-weight:800;letter-spacing:-.5px;margin-bottom:32px">Compétences techniques</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <div class="skill-header">
+            <span class="skill-icon sk-py">Py</span>
+            <div><div class="skill-name">Python</div><div class="skill-level">Intermédiaire</div></div>
+          </div>
+          <div class="skill-bar"><div class="skill-fill" style="width:55%"></div></div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-header">
+            <span class="skill-icon sk-ht">HT</span>
+            <div><div class="skill-name">HTML / CSS</div><div class="skill-level">Intermédiaire</div></div>
+          </div>
+          <div class="skill-bar"><div class="skill-fill" style="width:60%"></div></div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-header">
+            <span class="skill-icon sk-js">JS</span>
+            <div><div class="skill-name">JavaScript</div><div class="skill-level">Débutant</div></div>
+          </div>
+          <div class="skill-bar"><div class="skill-fill" style="width:25%"></div></div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-header">
+            <span class="skill-icon sk-ph">PHP</span>
+            <div><div class="skill-name">PHP / MySQL</div><div class="skill-level">Débutant</div></div>
+          </div>
+          <div class="skill-bar"><div class="skill-fill" style="width:20%"></div></div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-header">
+            <span class="skill-icon sk-ja">Ja</span>
+            <div><div class="skill-name">Java</div><div class="skill-level">Débutant</div></div>
+          </div>
+          <div class="skill-bar"><div class="skill-fill" style="width:15%"></div></div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-header">
+            <span class="skill-icon sk-xl">XL</span>
+            <div><div class="skill-name">Excel</div><div class="skill-level">Intermédiaire</div></div>
+          </div>
+          <div class="skill-bar"><div class="skill-fill" style="width:50%"></div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- SOFT SKILLS -->
+    <div class="wrap section-pad">
+      <span class="tag-sm">Savoir-être</span>
+      <h2 style="font-family:var(--font-h);font-size:clamp(1.6rem,3vw,2.2rem);font-weight:800;letter-spacing:-.5px;margin-bottom:32px">Mes 5 soft skills</h2>
+      <div class="soft-grid">
+        <div class="soft-card">
+          <span class="soft-icon">💬</span>
+          <h3>Communication</h3>
+          <ul>
+            <li>Prise de parole en public</li>
+            <li>Négociation</li>
+            <li>Assertivité</li>
+            <li>Écoute active</li>
+          </ul>
+        </div>
+        <div class="soft-card">
+          <span class="soft-icon">🧭</span>
+          <h3>Leadership</h3>
+          <ul>
+            <li>Résolution de conflits</li>
+            <li>Prise de décision</li>
+            <li>Savoir coacher</li>
+            <li>Management</li>
+          </ul>
+        </div>
+        <div class="soft-card">
+          <span class="soft-icon">🔍</span>
+          <h3>Esprit critique</h3>
+          <ul>
+            <li>Résolution de problèmes</li>
+            <li>Réflexion logique</li>
+            <li>Adaptabilité</li>
+            <li>Créativité</li>
+          </ul>
+        </div>
+        <div class="soft-card">
+          <span class="soft-icon">🤝</span>
+          <h3>Travail d'équipe</h3>
+          <ul>
+            <li>Intelligence émotionnelle</li>
+            <li>Collaboration</li>
+            <li>Feedback constructif</li>
+            <li>Empathie</li>
+          </ul>
+        </div>
+        <div class="soft-card">
+          <span class="soft-icon">🌱</span>
+          <h3>Attitude constructive</h3>
+          <ul>
+            <li>Confiance en soi</li>
+            <li>Coopération</li>
+            <li>Courtoisie</li>
+            <li>Patience</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- PASSIONS -->
+    <div class="wrap section-pad">
+      <span class="tag-sm">Motivations</span>
+      <h2 style="font-family:var(--font-h);font-size:clamp(1.6rem,3vw,2.2rem);font-weight:800;letter-spacing:-.5px;margin-bottom:32px">Ce qui me passionne</h2>
+      <div class="passion-grid">
+        <div class="passion-card featured">
+          <span class="passion-num">01</span>
+          <h3>Développement Web & Mobile</h3>
+          <p>Créer des expériences utilisateur fluides et accessibles, du design à la mise en ligne.</p>
+        </div>
+        <div class="passion-card">
+          <span class="passion-num">02</span>
+          <h3>Intelligence Artificielle & ML</h3>
+          <p>Transformer des données brutes en décisions intelligentes — chatbots, vision par ordinateur.</p>
+        </div>
+        <div class="passion-card">
+          <span class="passion-num">03</span>
+          <h3>Science des données & Big Data</h3>
+          <p>Optimisation logistique, lutte contre le changement climatique.</p>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+    <p>© 2025 <strong>Oumar Niang.</strong> Tous droits réservés.</p>
+  </footer>
+
+</body>
+</html>

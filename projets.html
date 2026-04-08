@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oumar Niang — Projets</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style/style.css">
+  <link rel="shortcut icon" href="./image/portifio.jpeg" type="image/jpg">
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <a href="./index.html" class="nav-logo">Oumar<span>.</span></a>
+      <div class="nav-links">
+        <a href="./index.html">Accueil</a>
+        <a href="./about.html">À propos</a>
+        <a href="./projets.html" class="active">Projets</a>
+        <a href="./video.html">Vidéo</a>
+        <a href="./contact.html">Contact</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu"
+        onclick="this.closest('nav').querySelector('.nav-links').classList.toggle('open')">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+
+    <div class="wrap" style="padding-top:64px; padding-bottom:32px;">
+      <span class="tag">Réalisations</span>
+      <h1 style="font-family:var(--font-h);font-size:clamp(2rem,4.5vw,3rem);font-weight:800;letter-spacing:-1px;margin-bottom:12px">
+        Mes projets
+      </h1>
+      <p style="color:var(--muted);font-size:15px;max-width:560px">
+        Trois projets réalisés en cours, chacun avec un rôle précis et des défis réels à relever.
+      </p>
+    </div>
+
+    <div class="projets-grid">
+
+      <!-- Projet 1 -->
+      <div class="prj-card">
+        <img src="./image/imagerestaurant.png" alt="Aperçu du site Teranga Délices">
+        <div class="prj-body">
+          <div>
+            <h2>Teranga Délices</h2>
+            <p>
+              Site web moderne pour un restaurant — présence en ligne avec menu, 
+              réservation de table et formulaire de contact.
+            </p>
+          </div>
+          <div class="prj-meta">
+            <div class="prj-meta-item"><strong>Mon rôle :</strong> Développement frontend</div>
+            <div class="prj-meta-item"><strong>Défi résolu :</strong> Responsive sur petits écrans avec Bootstrap</div>
+          </div>
+          <div class="prj-tags">
+            <span class="prj-tag">HTML</span>
+            <span class="prj-tag">CSS</span>
+            <span class="prj-tag">JavaScript</span>
+            <span class="prj-tag">PHP</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Projet 2 -->
+      <div class="prj-card">
+        <img src="./image/image-bloggamin.png" alt="Aperçu du Blog Gamin">
+        <div class="prj-body">
+          <div>
+            <h2>Blog Gamin — Minecraft</h2>
+            <p>
+              Plateforme de blog dédiée à l'univers Minecraft : astuces, mods, 
+              builds et actualités partagés par la communauté.
+            </p>
+          </div>
+          <div class="prj-meta">
+            <div class="prj-meta-item"><strong>Mon rôle :</strong> Développement frontend</div>
+            <div class="prj-meta-item"><strong>Défi résolu :</strong> Adaptation responsive multi-appareils</div>
+          </div>
+          <div class="prj-tags">
+            <span class="prj-tag">HTML</span>
+            <span class="prj-tag">CSS</span>
+            <span class="prj-tag">JavaScript</span>
+            <span class="prj-tag">PHP</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Projet 3 -->
+      <div class="prj-card">
+        <img src="./image/image-site-ecommerce.png" alt="Aperçu du site e-commerce automobile">
+        <div class="prj-body">
+          <div>
+            <h2>E-commerce — Pièces automobiles</h2>
+            <p>
+              Site e-commerce spécialisé dans la vente de pièces automobiles, 
+              avec catalogue produits et gestion des commandes.
+            </p>
+          </div>
+          <div class="prj-meta">
+            <div class="prj-meta-item"><strong>Mon rôle :</strong> Architecture backend</div>
+            <div class="prj-meta-item"><strong>Défi résolu :</strong> Responsive et expérience mobile optimale</div>
+          </div>
+          <div class="prj-tags">
+            <span class="prj-tag">HTML</span>
+            <span class="prj-tag">CSS</span>
+            <span class="prj-tag">JavaScript</span>
+            <span class="prj-tag">PHP</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </main>
+
+  <footer>
+    <p>© 2025 <strong>Oumar Niang.</strong> Tous droits réservés.</p>
+  </footer>
+
+</body>
+</html>

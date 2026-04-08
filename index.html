@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oumar Niang — Accueil</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style/style.css">
+  <link rel="shortcut icon" href="photo-profil.jpg" type="image/jpg">
+</head>
+<body>
+
+  <header class="banier">
+    <nav class="navbar">
+      <a href="./index.html" class="nav-logo">Oumar<span>.</span></a>
+      <div class="nav-links">
+        <a href="./index.html" class="active">Accueil</a>
+        <a href="./about.html">À propos</a>
+        <a href="./projets.html">Projets</a>
+        <a href="./video.html">Vidéo</a>
+        <a href="./contact.html">Contact</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu"
+        onclick="this.closest('nav').querySelector('.nav-links').classList.toggle('open')">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <div class="hero-index wrap">
+      <div>
+        <p class="hero-sub">Étudiant en génie logiciel</p>
+        <span class="tag">Disponible pour un stage</span>
+        <h1>Je suis <em>Oumar Niang</em></h1>
+        <p class="hero-desc">
+          Étudiant en 1ère année à l'ESTM, passionné par le Machine Learning,
+          l'Intelligence Artificielle et l'ingénierie logiciel. J'aime combiner
+          l'informatique et la biologie pour résoudre des problèmes concrets.
+        </p>
+        <div class="hero-btns">
+          <a href="./projets.html" class="btn btn-primary">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+            Voir mes projets
+          </a>
+          <a href="cv/cv.pdf" class="btn btn-outline" download>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Télécharger mon CV
+          </a>
+        </div>
+      </div>
+      <div class="hero-photo-wrap">
+        <img src="./image/photo-profil.jpg" alt="Photo de profil de Oumar Niang">
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- OBJECTIFS -->
+    <div class="wrap section-pad">
+      <div class="objectifs">
+        <span class="tag-sm">Vision</span>
+        <h2>Mes objectifs professionnels</h2>
+        <ul>
+          <li>Maîtriser des langages clés : Python, React, Kubernetes</li>
+          <li>Obtenir des certifications reconnues (AWS, Google Cloud…)</li>
+          <li>Contribuer à des projets open source de grande envergure</li>
+          <li>D'ici 10 ans : diriger un département tech ou lancer ma propre entreprise</li>
+        </ul>
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+    <p>© 2025 <strong>Oumar Niang.</strong> Tous droits réservés.</p>
+  </footer>
+
+</body>
+</html>
